@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SpaceCat</title>
+        <link rel="stylesheet" href="handyweitwurf/css/style.css">
+    </head>
+    <body>
+        <div class="screen active">
+            <div class="flex">
+                <h2>SpaceCat</h2>
+                <p>Füttere die Katze, um Ihre Spezies zu retten.</p>
+                <select id="planetSelection">
+                    <option value="9.81">Erde</option>
+                    <option value="1.62">Mond</option>
+                    <option value="3.69">Mars</option>
+                    <option value="24.79">Jupiter</option>
+                </select>
+                <input type="number" id="tryCounter" name="tryCounter" placeholder="Wieviele Versuche willst du?" required>
+
+                <div class="button" onclick="changeScreen()">Versuch es</div>
+            </div>
+            
+        </div>
+        <div class="screen">
+            <div class="flex">
+                <p id="meineWurfweite"></p>
+                <p id="monster"></p>
+                <p id="catGif"></p>
+                <input type="number" id="winkel" placeholder="Winkel zwischen 1° und 90°:">
+
+                <input type="number" id="anfangsGeschwindigkeit" placeholder="Wurfkraft">
+                
+                <div id="verstecken" class="button" onclick="werfen()">Werfen</div>
+                
+                <p id="versuche"></p>
+                
+            </div>
+        
+        </div>
+        <script type="text/javascript" src="handyweitwurf/js/script.js"></script>
+    </body>
+</html>

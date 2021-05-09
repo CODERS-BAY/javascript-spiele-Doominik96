@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zahlenraten</title>
+        <link rel="stylesheet" href="zahlenraten/css/style.css">
+    </head>
+    <body>
+        <div class="screen">
+            <div id="inputScreenDiv">
+                <input id="userMaxNumber" type="number" placeholder="wähle das Maximum für die Zufallszahl.">
+                <input id="tries" type="number" placeholder="wieviele Versuche wilst du?">
+                <div class="button" onclick="inputNumbers()">Los gehts</div>
+            </div>
+        </div>
+        <div class="screen hidden">
+            <div id="inputScreenDiv">
+                <input id="userInput" type="number" placeholder="errate die Zufallszahl.">
+                <div class="button" onclick="guessNumber()">Versuch es!</div>
+                <h2 id="number">Die gesuchte Zahl ist:</h2>
+            </div>
+        </div>
+        
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib.js"></script>
+        <script type="text/javascript" src="zahlenraten/js/script.js"></script>
+    </body>
+</html>

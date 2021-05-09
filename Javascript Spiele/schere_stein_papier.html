@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="schere_stein_papier/css/style.css">
+        <title>Schere, Stein, Papier</title>
+    </head>
+    <body>
+
+        <div class="screen">
+            <div id="startscreen">
+                <h2>Schere, Stein, Papier</h2>
+                <p>Versuche den Computer zu schlagen!</p>
+                
+                <input type="number" id="winCounter" name="winCounter" placeholder="auf wieviele Gewonnene Spiele willst du spielen?" required>
+                <div class="button" onclick="changeScreen()">Versuch es</div>
+            </div>
+        </div>
+        <div class="screen hidden">
+            <div id="flexbox1">
+                <h2>Schere, Stein, Papier</h2>
+                <div id="flexing">
+                    <div class="choices scissors" onclick="playerpick('scissors')">
+                        <!--Schere-->
+                    </div>
+                    <div class="choices stone" onclick="playerpick('stone')">
+                        <!--Stein-->
+                    </div>
+                    <div class="choices paper" onclick="playerpick('paper')">
+                        <!--Papier-->
+                    </div>
+                </div>
+            </div>
+            <div id="flexbox2">
+            </div>
+        </div>
+        
+
+        <script type="text/javascript" src="js/lib.js"></script>
+        <script type="text/javascript" src="schere_stein_papier/js/script.js"></script>
+    </body>
+</html>

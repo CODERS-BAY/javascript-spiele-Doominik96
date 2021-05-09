@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../image/katze-im-weltraum-.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+:root {
+    --primary: rgb(117, 117, 117);
+    --secondary: rgb(87, 72, 170);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+}
+
+.screen {
+    background-color: rgba(255, 255, 255, 0.466);
+    box-shadow: 1px 1px 10px #777;
+    padding: 40px;
+    text-align: center;
+    display: none;
+    width: 70vw;
+}
+.screen.active {
+    display: block;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: var(--secondary);
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    padding: 10px;
+}
+
+.button:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+#planetSelection, #winkel {
+    margin: 10px 0;
+}
+
+#tryCounter, #winkel, #anfangsGeschwindigkeit {
+    text-align: center;
+}
+
+#catGif {
+    background-image: url(../image/unnamed.gif);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    display: none;
+}
