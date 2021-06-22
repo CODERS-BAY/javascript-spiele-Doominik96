@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Codebreaker</title>
+        <link rel="stylesheet" href="codebreaker/css/style.css">
+    </head>
+    <body>
+        <div class="screen">
+            <div id="inputScreenDiv">
+                <p>Versuche den Zahlencode zwischen 111 und 999 zu knacken.</p>
+                <div id="container">
+
+                </div>
+                <input id="userInput" type="number" placeholder="errate die Zufallszahl.">
+                <div id="guessNumber" class="button">Los gehts</div>
+            </div>
+            <div id="resultDiv">
+                <p id="correctNumber"></p>
+                <p id="wrongPlace"></p>
+            </div>
+        </div>
+        
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib.js"></script>
+        <script type="text/javascript" src="codebreaker/js/script.js"></script>
+    </body>
+</html>
